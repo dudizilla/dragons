@@ -1,8 +1,8 @@
 import React from 'react';
 
-import axios from 'axios';
-
-import Picture from "./assets/dragons-default.png"
+import './DragonsList.css'
+import Picture from "../../assets/dragons-default.png";
+import dragonsService from '../../data/DragonService';
 
 export default class DragonsList extends React.Component {
     state = {
@@ -10,11 +10,10 @@ export default class DragonsList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon')
-        .then(res => {
-            const dragons = res.data;
-            this.setState({ dragons });
-        })
+        dragonsService.getDragons()
+            .then(dragons => {
+                this.setState({ dragons })
+            });
     }
 
     render() {

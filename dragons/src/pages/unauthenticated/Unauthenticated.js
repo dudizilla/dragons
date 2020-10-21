@@ -1,7 +1,7 @@
 import React from 'react';
 import './Unauthenticated.css';
-import Logo from "../../assets/dragon.png"
-import LoginButton from '../LoginButton';
+import Logo from "../../assets/dragon.png";
+import LoginButton from '../../components/login-button/LoginButton';
 import { useAuth0 } from '@auth0/auth0-react';
 
 function HomeUnauthenticated() {

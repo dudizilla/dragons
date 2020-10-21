@@ -29,28 +29,3 @@ img {
   width: 70px;
   font-size: 0;
 }
-
-.login-button {
-  width: 250px;
-  height: 4vh;
-  border: none;
-  border-radius: 20px;
-  background: #1D3557;
-
-  outline: none;
-  color: #f1faee;
-  cursor: pointer;
-
-  transition: background .3s ease-in-out;
-  /* box-shadow: 0px 5px 2px 0px rgba(33,59,76,1); */
-}
-
-@media only screen and (max-width: 600px) {
-  button {
-    width: 140px;
-  }
-}
-
-button:hover{
-  background: #e63946;
-}
