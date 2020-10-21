@@ -12,6 +12,6 @@
   transition: background .3s ease-in-out;
 }
 
-.logout:hover{
+.logout-button:hover{
   background: #e63946;
 }
