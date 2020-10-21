@@ -1,0 +1,45 @@
+.dragons-list {
+    min-height: 90vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dragon-card {
+    width: 70%;
+    height: 120px;
+    background: #457B9D;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(49,86,109,1);
+  
+    margin: 40px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    color: #f1faee;
+  
+    transition: background .2s ease-in-out;
+  }
+  
+  .dragon-card:hover{
+    background: #386480;
+  }
+  
+  .dragon-card:first-child {
+    margin-top: 70px;
+  }
+  
+  .dragon-image{
+    margin: 0 30px;
+  }
+  
+  .dragon-info{ 
+  
+  }
+  
+  .dragon-name {
+  }
+  
