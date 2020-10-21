@@ -21,11 +21,6 @@
   
     color: #f1faee;
   
-    transition: background .2s ease-in-out;
-  }
-  
-  .dragon-card:hover{
-    background: #386480;
   }
   
   .dragon-card:first-child {
@@ -36,10 +31,7 @@
     margin: 0 30px;
   }
   
-  .dragon-info{ 
-  
-  }
-  
-  .dragon-name {
+  .dragon-infos{ 
+      width: 70vw;
   }
   

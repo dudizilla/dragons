@@ -3,6 +3,8 @@ import React from 'react';
 import './DragonsList.css'
 import Picture from "../../assets/dragons-default.png";
 import dragonsService from '../../data/DragonService';
+import DeleteButton from '../delete-button/DeleteButton'
+import EditButton from '../edit-button/EditButton';
 
 export default class DragonsList extends React.Component {
     state = {
@@ -27,6 +29,8 @@ export default class DragonsList extends React.Component {
                         <p className="dragon-type"> type: {dragons.type} </p>
                         <p className="dragon-created"> created at: {dragons.createdAt} </p>
                     </div> 
+                    <EditButton />
+                    <DeleteButton />
                 </div>
                 )}
             </div>
