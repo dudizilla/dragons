@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomeUnauthenticated from './components/unauthenticated/Unauthenticated';
-import HomeAuthenticated from './components/authenticated/Authenticated';
+import HomeUnauthenticated from './pages/unauthenticated/Unauthenticated';
+import HomeAuthenticated from './pages/authenticated/Authenticated';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
