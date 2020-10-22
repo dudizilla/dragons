@@ -31,4 +31,5 @@ function HomeAuthenticated() {
     )
   );
 }
+
 export default HomeAuthenticated;
