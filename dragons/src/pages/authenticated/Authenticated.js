@@ -5,7 +5,6 @@ import LogoutButton from '../../components/logout-button/LogoutButton';
 import Profile from '../../components/profile/Profile';
 import { useAuth0 } from '@auth0/auth0-react';
 import DragonsList from '../../components/dragons-list/DragonsList';
-import AddDragon from '../../components/add-dragon/AddDragon'
 
 function HomeAuthenticated() {
   const { isAuthenticated } = useAuth0();
@@ -27,10 +26,10 @@ function HomeAuthenticated() {
         <LogoutButton />
         </div>
       </header>
-      <AddDragon />
       <DragonsList />
     </div>
     )
   );
 }
+
 export default HomeAuthenticated;
