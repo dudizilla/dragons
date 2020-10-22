@@ -38,7 +38,6 @@ export default class AddDragon extends React.Component {
     }));
   }
 
-
   render() {
     if (this.state.stateOpen === false) {
       return (
@@ -46,7 +45,7 @@ export default class AddDragon extends React.Component {
           <div className="add-dragon-button" onClick={this.stateChange}>
             <img src={Add} alt="add dragon button" />
           </div>
-          <NewDragon cancel={this.cancel} add={this.add} /> 
+          <NewDragon cancel={this.cancel} add={this.add} />
         </div>
       )
     } else {
@@ -55,21 +54,8 @@ export default class AddDragon extends React.Component {
           <div className="add-dragon-button" onClick={this.stateChange}>
             <img src={Add} alt="add dragon button" />
           </div>
-
         </div>
       )
     }
-
   }
-  /*render() {
-  return (
-
-    <div className="nav">
-      <div className="add-dragon-button" onClick={this.abre}>
-        <img src={Add} alt="add dragon button" />
-      </div>
-      <NewDragon isOpen={this.state.open} />
-    </div>
-  )
-}*/
 }
