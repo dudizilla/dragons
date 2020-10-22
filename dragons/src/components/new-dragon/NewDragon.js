@@ -1,28 +1,30 @@
 import './NewDragon.css';
 import Logo from '../../assets/dragon.png';
-// import dragonsService from '../../data/DragonService';
 
 import React from 'react'
 
 export default class NewDragon extends React.Component {
-  state = {
-    name: '',
-    type: ''
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      type: ''
+    }
   }
 
-  componentDidMount() {
-    handleChange = event => {
-      this.setState({ name: event.target.value });
-      this.setState({ type: event.target.value });
-    }
+  handleChangeName = (event) => {
+    this.setState({ name: event.target.value });
+  }
 
-    handleSubmit = event => {
-      event.preventDefault();
-      const user = {
-        name: this.state.name,
-        type: this.state.type
-      }
-    }
+  handleChangeType = (event) => {
+    this.setState({ type: event.target.value });
+  }
+
+  onSubmit = () => {
+    this.props.add({
+      name: this.state.name,
+      type: this.state.type
+    })
   }
 
   render() {
@@ -31,16 +33,14 @@ export default class NewDragon extends React.Component {
         <div className="backdrop">
         </div>
         <div className="popup">
-          <img src={Logo} alt="meet our fragons logo" />
-          <form onSubmit={this.handleSubmit}>
-          <input type="text" name="name" onChange={this.handleChange} placeholder="Dragon name" />
-          <input type="text" name="type" onChange={this.handleChange} placeholder="Type" />
+          <img src={Logo} alt="meet our dragons logo" />
+          <input type="text" value={this.state.name} onChange={this.handleChangeName} name="name" placeholder="Dragon name" />
+          <input type="text" value={this.state.type} onChange={this.handleChangeType} name="type" placeholder="Type" />
 
-            <div className="button">
-              <button className="add-dragon popup-button" type="submit">Add</button>
-              <button className="cancel-dragon popup-button">Cancel</button>
-            </div>
-          </form>
+          <div className="button">
+            <button className="add-dragon popup-button" onClick={this.onSubmit}>Add</button>
+            <button className="cancel-dragon popup-button" onClick={this.props.cancel}>Cancel</button>
+          </div>
         </div>
       </div>
     )
