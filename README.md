@@ -1,21 +1,20 @@
-Teste de frontend para a SoftDesign
+# Meet out Dragons
 
-Minha aplicação possui autenticação (pelo Auth0) listagem e criação de novos dragões :)
+Meet our dragons is a frontend test for the company SoftDesign. The main function is to create and list ~edit and delete~ the dragons. 
 
-Irei adicionar as funcionalidades de deleção e edição, porém as mesmas ficarão na branch dev, pois não finalizei a tempo.
+## Installation
 
-Para facilitar a avaliação o file .env foi commitado.
-
-*utilizei auth0 pois é uma ferramenta muito utilizada no mercado.
-
---------------------------------------------------------------------------------------------------------------------
-
-Para instalar o projeto:
-cd .\dragons
-
+```bash
 npm install
+```
 
+## Usage
 
-Para rodar:
+```bash
 npm start
-que abrirá a aplicação no localhost:3000
+```
+
+## Note
+I don't have the delete and edit function yet. As soon as I create the functions, they will be in the dev branch. :)
+
+#### Thank you!
