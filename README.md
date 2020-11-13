@@ -1,6 +1,4 @@
-# Meet our Dragons
-
-Teste de frontend para a SoftDesign 
+Teste de frontend para a SoftDesign
 
 Minha aplicação possui autenticação (pelo Auth0) listagem e criação de novos dragões :)
 
@@ -9,3 +7,15 @@ Irei adicionar as funcionalidades de deleção e edição, porém as mesmas fica
 Para facilitar a avaliação o file .env foi commitado.
 
 *utilizei auth0 pois é uma ferramenta muito utilizada no mercado.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Para instalar o projeto:
+cd .\dragons
+
+npm install
+
+
+Para rodar:
+npm start
+que abrirá a aplicação no localhost:3000
